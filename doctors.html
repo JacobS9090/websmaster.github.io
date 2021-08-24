@@ -12,542 +12,561 @@
     <title>Hippocrates Direct</title>
   </head>
   <body>
-
-      <nav class="navbar navbar-fixed-top">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#NavbarA">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="index.html"><img src="img/facivo.png"></a>
-            </div>
-            <div class="collapse navbar-collapse" id="NavbarA">
-              <ul class="nav navbar-nav">
-                <li><a href="index.html"> Home</a></li>
-                <li class="active"><a href="doctors.html"><span class="glyphicon glyphicon-heart"></span> Doctors</a></li>
-                <li><a href="reviews.html"><span class="glyphicon glyphicon-comment"></span> Reviews</a></li>
-                <li><a href="about-us.html"><span class="glyphicon glyphicon-info-sign"></span> About Hippocrates Direct</a></li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-                <li><button type="button" class="nav-text-button">Enlarge Text</button></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-
-    <header class="text-center">
-        <h1>Primary Physician Options</h3>
-        <p class="subtitle">Choose region of residence</p>
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#NavbarA">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="img/facivo.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="NavbarA">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html"> Home</a></li>
+            <li class="active"><a href="doctors.html"><span class="glyphicon glyphicon-heart"></span> Doctors</a></li>
+            <li><a href="reviews.html"><span class="glyphicon glyphicon-comment"></span> Reviews</a></li>
+            <li><a href="about-us.html"><span class="glyphicon glyphicon-info-sign"></span> About Hippocrates Direct</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><button type="button" class="nav-text-button" onclick="growText()">Enlarge Text</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <header class="text-center">
+        <h1>Primary Physicians</h3>
+        <p class="subtitle">Primary Physicians are exclusive to certain regions of the United States. Please select your region of residence</p>
       </header>
-      <main role="main">
-        <div class="container-fluid">
-                  <h2>Choose a Region</h2>
-                  <select name="regions" id="regions">
-                    <option selected disabled value="empty-state">Select Region</option>
-
-                    <option id="wc" value="wc">West Coast</option>
-                    <option id="ec" value="ec">East Coast</option>
-                    <option id="mw"value="mw">Midwest</option>
-                    <option id="s" value="s">South</option>
-                    <option id="rm" value="rm">Rocky Mountains</option>
-                  </select>
-        </div>
-
-        <div class="second step">
-          <div class="second step">
-            <div id="doctors">
-              <p id="head"></p>
-              <p id="regions-heading">Choose a region</p>
-        </div>
-        </div>
-      </div>
-      </main>
-    <div class="container-fluid mw k">
-      <div class="row">
-        <div class="col-xs-5">
-          <div class="jumbotron ">
-            <div class="row">
-              <div class="col-xs-5">
-                <img class="rounded" src="img/doctors(1).jpeg">
-              </div>
-              <div class="col-xs-7">
-                <h3>Johann Zemak</h3>
-                <p class="bio">General Practioner
-                  <br>
-                  <br>
-                  Phone Number:
-                  <br>
-                  (328)-842-8789
-                </p>
-              </div>
-            </div>
+      <center>
+        <div class="dropdown">
+          <button class="dropbtn">Doctors in your area</button>
+          <div class="dropdown-content">
+            <a><button onclick="mwFunction()">Midwest</button></a>
+            <a><button onclick="neFunction()">Northeast and Mid-Atlantic</button></a>
+            <a><button onclick="wcFunction()">West Coast</button></a>
+            <a><button onclick="sFunction()">South</button></a>
+            <a><button onclick="rmFunction()">Rocky Mountains</button></a>
           </div>
         </div>
-      <div class="col-xs-2">
-          <br>
-          <br>
-      </div>
-          <div class="col-xs-5">
-              <div class="jumbotron ">
-                <div class="row">
-                  <div class="col-xs-5">
-                    <img class="rounded" src="img/doctors(2).jpeg">
-                  </div>
-                  <div class="col-xs-7">
-                    <h3>Jonathon Caleb</h3>
-                    <p class="bio">Physician
-                      <br>
-                      <br>
-                      Phone Number:
-                      <br>
-                      (782)-569-3425
-                    </p>
-                  </div>
+      </center>
+      <!-- <div class="second step">
+        <div class="second step">
+          <div id="doctors">
+            <p id="head"></p>
+            <p id="regions-heading">Choose a region</p>
+          </div>
+        </div>
+      </div> -->
+      <div id="mw" class="k">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="jumbotron">
+              <div class="row">
+                <div class="col-md-5">
+                  <img class="rounded" src="img/doctors(1).jpeg">
+                </div>
+                <div class="col-md-7">
+                  <h3>Johann Zemak M.D.</h3>
+                  <p class="bio">General Practioner
+                    <br>
+                    <br>
+                    Phone Number:
+                    <br>
+                    (328)-842-8789
+                  </p>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="col-md-2">
+            <br>
+            <br>
+          </div>
+          <div class="col-md-5">
+            <div class="jumbotron ">
+              <div class="row">
+                <div class="col-md-5">
+                  <img class="rounded" src="img/doctors(2).jpeg">
+                </div>
+                <div class="col-md-7">
+                  <h3>Jonathon Caleb M.D.</h3>
+                  <p class="bio">Physician
+                    <br>
+                    <br>
+                    Phone Number:
+                    <br>
+                    (782)-569-3425
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="jumbotron ">
+              <div class="row">
+                <div class="col-md-5">
+                  <img class="rounded" src="img/doctors(3).jpg">
+                </div>
+                <div class="col-md-7">
+                  <h3>Lindon Jewell M.D.</h3>
+                  <p class="bio">Physician
+                    <br>
+                    <br>
+                    Phone Number:
+                    <br>
+                    (438)-843-4467
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <br>
+            <br>
+          </div>
+          <div class="col-md-5">
+            <div class="jumbotron ">
+              <div class="row">
+                <div class="col-md-5">
+                  <img class="rounded" src="img/wdoctors(4).jpg">
+                </div>
+                <div class="col-md-7">
+                  <h3>Erin Hook M.D.</h3>
+                  <p class="bio"> Family Doctor
+                    <br>
+                    <br>
+                    Phone Number:
+                    <br>
+                    (843)-465-6228
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="wc" class="k">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="jumbotron ">
+              <div class="row">
+                <div class="col-md-5">
+                  <img class="rounded" src="img/gdoctor.jpg">
+                </div>
+                <div class="col-md-7">
+                  <h3>Jonathon Gibberson III M.D.</h3>
+                  <p class="bio">Family Doctor
+                    <br>
+                    <br>
+                    Phone Number:
+                    <br>
+                    (321)-867-5309
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <br>
+            <br>
+          </div>
+          <div class="col-md-5">
+            <div class="jumbotron ">
+              <div class="row">
+                <div class="col-md-5">
+                  <img class="rounded" src="img/asdoctor.jpg">
+                </div>
+                <div class="col-md-7">
+                  <h3>Evan Mang M.D.</h3>
+                  <p class="bio">Internist
+                    <br>
+                    <br>
+                    Phone Number:
+                    <br>
+                    (742)-569-8008
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="jumbotron ">
+              <div class="row">
+                <div class="col-md-5">
+                  <img class="rounded" src="img/watsdoctor.jpg">
+                </div>
+                <div class="col-md-7">
+                  <h3>Janet Jameson M.D.</h3>
+                  <p class="bio">Pediatrics
+                    <br>
+                    <br>
+                    Phone Number:
+                    <br>
+                    (568)-490-4467
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <br>
+            <br>
+          </div>
+          <div class="col-md-5">
+            <div class="jumbotron ">
+              <div class="row">
+                <div class="col-md-5">
+                  <img class="rounded" src="img/mk.jpeg">
+                </div>
+                <div class="col-md-7">
+                  <h3>Raquel Kline M.D.</h3>
+                  <p class="bio"> Family Doctor
+                    <br>
+                    <br>
+                    Phone Number:
+                    <br>
+                    (699)-835-9998
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="s" class="k">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="jumbotron ">
+              <div class="row">
+                <div class="col-md-5">
+                  <img class="rounded" src="img/charlie.jpg">
+                </div>
+                <div class="col-md-7">
+                  <h3>Chuck Marvin M.D.</h3>
+                  <p class="bio">Family Doctor
+                    <br>
+                    <br>
+                    Phone Number:
+                    <br>
+                    (875)-963-2008
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <br>
+            <br>
           </div>
           <div class="row">
-              <div class="col-xs-5">
-                <div class="jumbotron ">
-                  <div class="row">
-                    <div class="col-xs-5">
-                      <img class="rounded" src="img/doctors(3).jpg">
-                    </div>
-                    <div class="col-xs-7">
-                      <h3>Lindon Jewell</h3>
-                      <p class="bio">Physician
-                        <br>
-                        <br>
-                        Phone Number:
-                        <br>
-                        (438)-843-4467
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <div class="col-xs-2">
-                <br>
-                <br>
-            </div>
-                <div class="col-xs-5">
-                    <div class="jumbotron ">
-                      <div class="row">
-                        <div class="col-xs-5">
-                          <img class="rounded" src="img/wdoctors(4).jpg">
-                        </div>
-                        <div class="col-xs-7">
-                          <h3>Erin Hook</h3>
-                          <p class="bio"> Family Doctor
-                            <br>
-                            <br>
-                            Phone Number:
-                            <br>
-                            (843)-465-6228
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-        </div>
-        <div class="container-fluid wc k">
-            <div class="row">
-              <div class="col-xs-5">
-                <div class="jumbotron ">
-                  <div class="row">
-                    <div class="col-xs-5">
-                      <img class="rounded" src="img/gdoctor.jpg">
-                    </div>
-                    <div class="col-xs-7">
-                      <h3>Jonathon Gibberson III</h3>
-                      <p class="bio">Family Doctor
-                        <br>
-                        <br>
-                        Phone Number:
-                        <br>
-                        (321)-867-5309
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <div class="col-xs-2">
-                <br>
-                <br>
-            </div>
-                <div class="col-xs-5">
-                    <div class="jumbotron ">
-                      <div class="row">
-                        <div class="col-xs-5">
-                          <img class="rounded" src="img/asdoctor.jpg">
-                        </div>
-                        <div class="col-xs-7">
-                          <h3>Evan Mang</h3>
-                          <p class="bio">Internist
-                            <br>
-                            <br>
-                            Phone Number:
-                            <br>
-                            (742)-569-8008
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="col-md-5">
+              <div class="jumbotron">
                 <div class="row">
-                    <div class="col-xs-5">
-                      <div class="jumbotron ">
-                        <div class="row">
-                          <div class="col-xs-5">
-                            <img class="rounded" src="img/watsdoctor.jpg">
-                          </div>
-                          <div class="col-xs-7">
-                            <h3>Janet Jameson</h3>
-                            <p class="bio">Pediatrics
-                              <br>
-                              <br>
-                              Phone Number:
-                              <br>
-                              (568)-490-4467
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  <div class="col-xs-2">
-                      <br>
-                      <br>
-                  </div>
-                      <div class="col-xs-5">
-                          <div class="jumbotron ">
-                            <div class="row">
-                              <div class="col-xs-5">
-                                <img class="rounded" src="img/mk.jpeg">
-                              </div>
-                              <div class="col-xs-7">
-                                <h3>Raquel Kline</h3>
-                                <p class="bio"> Family Doctor
-                                  <br>
-                                  <br>
-                                  Phone Number:
-                                  <br>
-                                  (699)-835-9998
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="container-fluid s k">
-                      <div class="row">
-                        <div class="col-xs-5">
-                          <div class="jumbotron ">
-                            <div class="row">
-                              <div class="col-xs-5">
-                                <img class="rounded" src="img/charlie.jpg">
-                              </div>
-                              <div class="col-xs-7">
-                                <h3>Chuck Marvin</h3>
-                                <p class="bio">Family Doctor
-                                  <br>
-                                  <br>
-                                  Phone Number:
-                                  <br>
-                                  (875)-963-2008
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      <div class="col-xs-2">
-                          <br>
-                          <br>
-                      </div>
-                          <div class="col-xs-5">
-                              <div class="jumbotron ">
-                                <div class="row">
-                                  <div class="col-xs-5">
-                                    <img class="rounded" src="img/pencil.jpg">
-                                  </div>
-                                  <div class="col-xs-7">
-                                    <h3>Thomas Stabanelli</h3>
-                                    <p class="bio">Internist
-                                      <br>
-                                      <br>
-                                      Phone Number:
-                                      <br>
-                                      (839)-507-5699
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                              <div class="col-xs-5">
-                                <div class="jumbotron ">
-                                  <div class="row">
-                                    <div class="col-xs-5">
-                                      <img class="rounded" src="img/ronan.jpg">
-                                    </div>
-                                    <div class="col-xs-7">
-                                      <h3>Shaun Gingerton</h3>
-                                      <p class="bio">Internist
-                                        <br>
-                                        <br>
-                                        Phone Number:
-                                        <br>
-                                        (965)-309-4227
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            <div class="col-xs-2">
-                                <br>
-                                <br>
-                            </div>
-                                <div class="col-xs-5">
-                                    <div class="jumbotron">
-                                      <div class="row">
-                                        <div class="col-xs-5">
-                                          <img class="rounded" src="img/legoman.jpg">
-                                        </div>
-                                        <div class="col-xs-7">
-                                          <h3>Christopher A. Enfron</h3>
-                                          <p class="bio"> Physician
-                                            <br>
-                                            <br>
-                                            Phone Number:
-                                            <br>
-                                            (899)-235-5498
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="container-fluid ec k">
-                                <div class="row">
-                                  <div class="col-xs-5">
-                                    <div class="jumbotron ">
-                                      <div class="row">
-                                        <div class="col-xs-5">
-                                          <img class="rounded" src="img/steven.jpeg">
-                                        </div>
-                                        <div class="col-xs-7">
-                                          <h3>Steven Kutzhair</h3>
-                                          <p class="bio">Internist
-                                            <br>
-                                            <br>
-                                            Phone Number:
-                                            <br>
-                                            (905)-773-6479
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                <div class="col-xs-2">
-                                    <br>
-                                    <br>
-                                </div>
-                                    <div class="col-xs-5">
-                                        <div class="jumbotron ">
-                                          <div class="row">
-                                            <div class="col-xs-5">
-                                              <img class="rounded" src="img/todd-showard.jpg">
-                                            </div>
-                                            <div class="col-xs-7">
-                                              <h3>Tod Showard</h3>
-                                              <p class="bio">Internist
-                                                <br>
-                                                <br>
-                                                Phone Number:
-                                                <br>
-                                                (789)-760-4076
-                                              </p>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-5">
-                                          <div class="jumbotron ">
-                                            <div class="row">
-                                              <div class="col-xs-5">
-                                                <img class="rounded" src="img/vondoctor.jpg">
-                                              </div>
-                                              <div class="col-xs-7">
-                                                <h3>Christopher Vonameister</h3>
-                                                <p class="bio">Pediatrics
-                                                  <br>
-                                                  <br>
-                                                  Phone Number:
-                                                  <br>
-                                                  (678)-235-8777
-                                                </p>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      <div class="col-xs-2">
-                                          <br>
-                                          <br>
-                                      </div>
-                                          <div class="col-xs-5">
-                                              <div class="jumbotron ">
-                                                <div class="row">
-                                                  <div class="col-xs-5">
-                                                    <img class="rounded" src="img/msullivan.jpg">
-                                                  </div>
-                                                  <div class="col-xs-7">
-                                                    <h3>Matt Sullivan</h3>
-                                                    <p class="bio"> Physician
-                                                      <br>
-                                                      <br>
-                                                      Phone Number:
-                                                      <br>
-                                                      (777)-995-4200
-                                                    </p>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="container-fluid rm k">
-                                          <div class="row">
-                                            <div class="col-xs-5">
-                                              <div class="jumbotron ">
-                                                <div class="row">
-                                                  <div class="col-xs-5">
-                                                    <img class="rounded" src="img/Flynn.jpg">
-                                                  </div>
-                                                  <div class="col-xs-7">
-                                                    <h3>Dr Andy Interstellar PhD</h3>
-                                                    <p class="bio">Chiropractor
-                                                      <br>
-                                                      <br>
-                                                      Phone Number:
-                                                      <br>
-                                                      (512)-328-2770
-                                                    </p>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          <div class="col-xs-2">
-                                              <br>
-                                              <br>
-                                          </div>
-                                              <div class="col-xs-5">
-                                                  <div class="jumbotron ">
-                                                    <div class="row">
-                                                      <div class="col-xs-5">
-                                                        <img class="rounded" src="img/abe.jfif">
-                                                      </div>
-                                                      <div class="col-xs-7">
-                                                        <h3>Dr Abe Ghoul MDP</h3>
-                                                        <p class="bio">Family Doctor
-                                                          <br>
-                                                          <br>
-                                                          Phone Number:
-                                                          <br>
-                                                          (786)-637-7253
-                                                        </p>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <div class="row">
-                                                  <div class="col-xs-5">
-                                                    <div class="jumbotron ">
-                                                      <div class="row">
-                                                        <div class="col-xs-5">
-                                                          <img class="rounded" src="img/phil.jpg">
-                                                        </div>
-                                                        <div class="col-xs-7">
-                                                          <h3>Dr Phil Mates MDP</h3>
-                                                          <p class="bio">Physician
-                                                            <br>
-                                                            <br>
-                                                            Phone Number:
-                                                            <br>
-                                                            (642)-767-6038
-                                                          </p>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                <div class="col-xs-2">
-                                                    <br>
-                                                    <br>
-                                                </div>
-                                                    <div class="col-xs-5">
-                                                        <div class="jumbotron ">
-                                                          <div class="row">
-                                                            <div class="col-xs-5">
-                                                              <img class="rounded" src="img/tina.png">
-                                                            </div>
-                                                            <div class="col-xs-7">
-                                                              <h3>Dr Tina Macieher PhD</h3>
-                                                              <p class="bio"> Internist
-                                                            <br>
-                                                                <br>
-                                                                Phone Number:
-                                                            <br>
-                                                            (642)-694-6939
-                                                          </p>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-
-                                            </body>
-
-
-                <button onclick="myFunction()">Click Me</button>
-                <div id="myDIV">
-                    This is my DIV element.
-                  </div>
-                  function myFunction() {
-                    var x = document.getElementById("myDIV");
-                    if (x.style.display === "none") {
-                      x.style.display = "block";
-                    } else {
-                      x.style.display = "none";
-                    }
-                  }
-                <br>
-
-    <footer>
-      <h5 class="center"><b>Email us:</b> support@hip.med <b>Call us:</b> 1-800-DONOTCALL</h5>
-    </footer>
-  <script>
-   var regions = document.getElementById('regions');
-
-
+                  <div class="col-md-5">
+                  <img class="rounded" src="img/pencil.jpg">
+                </div>
+                <div class="col-md-7">
+                  <h3>Thomas Stabanelli M.D.</h3>
+                  <p class="bio">Internist
+                    <br>
+                    <br>
+                    Phone Number:
+                    <br>
+                    (839)-507-5699
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="jumbotron">
+              <div class="row">
+                <div class="col-md-5">
+                  <img class="rounded" src="img/ronan.jpg">
+                </div>
+                <div class="col-md-7">
+                  <h3>Shaun Gingerton M.D.</h3>
+                  <p class="bio">Internist
+                    <br>
+                    <br>
+                    Phone Number:
+                    <br>
+                    (965)-309-4227
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <br>
+            <br>
+          </div>
+          <div class="col-md-5">
+            <div class="jumbotron">
+              <div class="row">
+                <div class="col-md-5">
+                  <img id="ttall" class="rounded" src="img/legoman.jpg">
+                </div>
+                <div class="col-md-7">
+                  <h3>Christopher Confron M.D.</h3>
+                  <p class="bio">Physician
+                    <br>
+                    <br>
+                    Phone Number:
+                    <br>
+                    (899)-235-5498
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="ne" class="container-fluid k">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="jumbotron ">
+              <div class="row">
+                <div class="col-md-5">
+                  <img class="rounded" src="img/steven.jpeg">
+                </div>
+                <div class="col-md-7">
+                  <h3>Steven Kutzhair M.D.</h3>
+                  <p class="bio">Internist
+                    <br>
+                    <br>
+                    Phone Number:
+                    <br>
+                    (905)-773-6479
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <br>
+            <br>
+          </div>
+          <div class="col-md-5">
+            <div class="jumbotron ">
+              <div class="row">
+                <div class="col-md-5">
+                  <img class="rounded" src="img/todd-showard.jpg">
+                </div>
+                <div class="col-md-7">
+                  <h3>Tod Showard M.D.</h3>
+                  <p class="bio">Internist
+                    <br>
+                    <br>
+                    Phone Number:
+                    <br>
+                    (789)-760-4076
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+                <div class="row">
+          <div class="col-md-5">
+            <div class="jumbotron ">
+              <div class="row">
+                <div class="col-md-5">
+                  <img class="rounded" src="img/vondoctor.jpg">
+                </div>
+                <div class="col-md-7">
+                  <h3>Christopher Vonameister M.D.</h3>
+                  <p class="bio">Pediatrics
+                    <br>
+                    <br>
+                    Phone Number:
+                    <br>
+                    (678)-235-8777
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+         <div class="col-md-2">
+              <br>
+              <br>
+          </div>
+          <div class="col-md-5">
+            <div class="jumbotron ">
+              <div class="row">
+                <div class="col-md-5">
+                  <img class="rounded" src="img/matt.png">
+                </div>
+                <div class="col-md-7">
+                  <h3>Matt Sullivan M.D.</h3>
+                  <p class="bio">Physician
+                    <br>
+                    <br>
+                    Phone Number:
+                    <br>
+                    (777)-995-4200
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="rm" class="k">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="jumbotron ">
+              <div class="row">
+                <div class="col-md-5">
+                  <img class="rounded" src="img/Flynn.jpg">
+                </div>
+                <div class="col-md-7">
+                  <h3>Andrew Interstellar PhD</h3>
+                  <p class="bio">Chiropractor
+                    <br>
+                    <br>
+                    Phone Number:
+                    <br>
+                    (512)-328-2770
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <br>
+            <br>
+          </div>
+          <div class="col-md-5">
+            <div class="jumbotron ">
+              <div class="row">
+                <div class="col-md-5">
+                  <img class="rounded" src="img/abe.jpg">
+                </div>
+                <div class="col-md-7">
+                  <h3>Abe Ghoul M.D.</h3>
+                  <p class="bio">Family Doctor
+                    <br>
+                    <br>
+                    Phone Number:
+                    <br>
+                    (786)-637-7253
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="jumbotron ">
+              <div class="row">
+                <div class="col-md-5">
+                  <img class="rounded" src="img/phil.jpg">
+                </div>
+                <div class="col-md-7">
+                  <h3>Phil Mates M.D.</h3>
+                  <p class="bio">Physician
+                    <br>
+                    <br>
+                    Phone Number:
+                    <br>
+                    (642)-767-6038
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <br>
+            <br>
+          </div>
+          <div class="col-md-5">
+            <div class="jumbotron ">
+              <div class="row">
+                <div class="col-md-5">
+                  <img class="rounded" src="img/tina.png">
+                </div>
+                <div class="col-md-7">
+                  <h3>Tina Pacieher M.D.</h3>
+                  <p class="bio"> Internist
+                    <br>
+                    <br>
+                    Phone Number:
+                    <br>
+                    (642)-694-6939
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </div>  -->
+  </div>    
+  <br>
+  <footer>
+    <h5 class="text-center"><b>Email us:</b> support@hip.med <b>Call us:</b> 1-800-DONOTCALL</h5>
+  </footer>
+    </div>
+    <script>
+      var regions = document.getElementById('regions');
       regions.onchange = function () {
-      document.getElementById("doctors").style.backgroundImage =
-        'url("img/' + regions.value + '@2x.jpg")';
-        document.getElementById("head").innerHTML = "Doctors in the area";
-      document.getElementById("regions-heading").innerHTML = regions.options[this.selectedIndex].text;
-}
-$("option#wc").click(function(){
-  $("div.wc").removeClass("k");
-});
-  </script>
-</body>
+      document.getElementById("doctors").style.visibility = "visible";
+      }
+      function neFunction() {
+        var ne = document.getElementById("ne");
+        ne.classList.remove("k");
+        mw.classList.add("k");
+        s.classList.add("k");
+        rm.classList.add("k");
+        wc.classList.add("k");
+      }
+      function mwFunction() {
+        var mw = document.getElementById("mw");
+        mw.classList.remove("k");
+        ne.classList.add("k");
+        s.classList.add("k");
+        rm.classList.add("k");
+        wc.classList.add("k");
+      }
+      function sFunction() {
+        var s = document.getElementById("s");
+        s.classList.remove("k");
+        ne.classList.add("k");
+        mw.classList.add("k");
+        rm.classList.add("k");
+        wc.classList.add("k");
+      }
+      function rmFunction() {
+        var rm = document.getElementById("rm");
+        rm.classList.remove("k");
+        ne.classList.add("k");
+        s.classList.add("k");
+        mw.classList.add("k");
+        wc.classList.add("k");
+      }
+      function wcFunction() {
+        var wc = document.getElementById("wc");
+        wc.classList.remove("k");
+        ne.classList.add("k");
+        mw.classList.add("k");
+        rm.classList.add("k");
+        s.classList.add("k");
+      }
+      function growText() {
+        $("h3, p, a").addClass("big-text");
+      }
+    </script>
+  </body>
 </html>
